@@ -4,15 +4,14 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('school', '0003_remove_student_teacher_student_teachers'),
+        ("school", "0003_remove_student_teacher_student_teachers"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='student',
-            name='teachers',
-            field=models.ManyToManyField(related_name='teachers', to='school.teacher'),
+            model_name="student",
+            name="teachers",
+            field=models.ManyToManyField(related_name="teachers", to="school.teacher"),
         ),
     ]
